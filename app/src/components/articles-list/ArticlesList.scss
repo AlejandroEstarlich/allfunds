@@ -1,0 +1,42 @@
+.articles {
+  display: flex;
+  margin: auto;
+  margin-top: 2vh;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+
+  &-element {
+    width:45%;
+    margin-bottom: 5vh;
+
+    &-img {
+      overflow: hidden;
+      max-height: 500px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h2 {
+      font-size: 2vw;
+    }
+
+    h2, h3, p {
+      display: block;
+      text-align: left !important;
+    }
+
+    a {
+      display: block;
+      text-align: right;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    &:nth-child(1) {
+      width: 100%;
+    }
+  }
+}
